@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-input-output';
+  count = 0
+
+  updateCount(event: any) {
+    this.count = event
+  }
 }
